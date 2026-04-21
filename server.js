@@ -27,21 +27,6 @@ app.use('/api/auth', authLimiter);
 app.use('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
-const {
-  contractsRouter,
-  automationsRouter,
-  sequencesRouter,
-  tasksRouter,
-  scrapeRouter,
-  dashboardRouter,
-} = require('./routes/misc');
-
-app.use('/api/contracts',    contractsRouter);
-app.use('/api/automations',  automationsRouter);
-app.use('/api/sequences',    sequencesRouter);
-app.use('/api/tasks',        tasksRouter);
-app.use('/api/scrape',       scrapeRouter);
-app.use('/api/dashboard',    dashboardRouter);
 
 // Health check
 app.get('/health', (req, res) => res.json({ status: 'ok', ts: new Date().toISOString() }));
