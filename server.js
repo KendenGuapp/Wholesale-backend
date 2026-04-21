@@ -39,8 +39,9 @@ app.use((err, req, res, next) => {
 
 // ── START ─────────────────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 3001;
+
 app.listen(PORT, () => {
   console.log(`🏠 WholesaleOS API running on port ${PORT}`);
-  // Start background jobs
- 
+});
+
 module.exports = app;
