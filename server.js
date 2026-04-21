@@ -24,11 +24,11 @@ app.use('/api/', limiter);
 app.use('/api/auth', authLimiter);
 
 // ── ROUTES ────────────────────────────────────────────────────────────────────
-app.use('/api/auth',          require('./routes/auth'));
-app.use('/api/sellers',       require('./routes/sellers'));
-app.use('/api/buyers',        require('./routes/buyers'));
-app.use('/api/deals',         require('./routes/deals'));
-app.use('/api/interactions',  require('./routes/interactions'));
+app.use('/api/auth',          require('./auth'));
+app.use('/api/sellers',       require('./sellers'));
+app.use('/api/buyers',        require('./buyers'));
+app.use('/api/deals',         require('./deals'));
+app.use('/api/interactions',  require('./interactions'));
 
 const {
   contractsRouter,
