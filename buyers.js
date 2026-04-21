@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { query } = require('../db');
+const { query } = require('./db');
 const { authenticate } = require('../middleware/auth');
 const messagingService = require('../services/messaging');
 
