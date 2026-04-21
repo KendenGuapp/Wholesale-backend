@@ -42,7 +42,5 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`🏠 WholesaleOS API running on port ${PORT}`);
   // Start background jobs
-  require('./jobs/scheduler').startJobs();
-});
-
+ 
 module.exports = app;
