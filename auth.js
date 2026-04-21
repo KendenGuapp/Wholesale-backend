@@ -1,4 +1,4 @@
-const { query } = require('../db');
+const { query } = require('../db.js');
 const messagingService = require('./messaging');
 
 /**
